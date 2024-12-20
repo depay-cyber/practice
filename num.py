@@ -27,8 +27,26 @@
 #     print('your extreme obese')
         
  #operator 111
-a = 'ambrose'
-if (type(a)is str ) :
-    print('true')
-else:
-    print('false')                  
+# a = 'ambrose'
+# if (type(a)is str ) :
+#     print('true')
+# else:
+#     print('false')   
+
+
+#divisibility tests
+print('enter two numbers to test divisibility')
+num1 = int(input('Num 1: ')) 
+num2 = int(input('Num 2: '))
+print(num1)
+print(num2) 
+if num1 % num2 ==0 :
+    print(str(num1)+ ' is divisible by ' + str(num2)) 
+else :
+    print(str(num1)+' is not divisible by'+ str(num2) )
+       
+if num2 % 2 ==0 :
+    print(str(num2) +' is an Even number')
+else :
+    print(str(num2)+ ('is an odd number'))
+                            
