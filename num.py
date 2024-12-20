@@ -13,17 +13,22 @@
 #     print('number is odd')    
 
 #Caluculate BMI
-height = float(input('enter your height'))
-weight = float(input('enter your weight'))
-BMI = weight / (height/100)**2
-print('your BMI is: ', BMI)
-if BMI<= 18.4:
-    print('you are underwight')
-elif BMI<= 24.9:
-    print('you are normal')
-elif BMI<=34.9:
-    print('your obese')
-else:
-    print('your extreme obese')
+# height = float(input('enter your height'))
+# weight = float(input('enter your weight'))
+# BMI = weight / (height/100)**2
+# print('your BMI is: ', BMI)
+# if BMI<= 18.4:
+#     print('you are underwight')
+# elif BMI<= 24.9:
+#     print('you are normal')
+# elif BMI<=34.9:
+#     print('your obese')
+# else:
+#     print('your extreme obese')
         
-                
+ #operator 111
+a = 'ambrose'
+if (type(a)is str ) :
+    print('true')
+else:
+    print('false')                  
