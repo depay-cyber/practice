@@ -53,27 +53,40 @@
                             
 
 # Choose a ride
-print('select your ride')
-print('1. bike')
-print('2. car')
-choice= int(input('enter your coice'))
-if choice== 1:
-    print('what type of bike')
-    print( '1.quad bike')
-    print('2. motorcycle')
-    choice2 = int(input('which bike do you prefer'))
-    if choice2 == 1:
-        print('you have selected a quad bike')
-    else:
-        print('you have selected a mortorcycle')
-elif choice==2:
-    print('what type of car do you want ')
-    print('1. Mercedes Benz')
-    print('2. Toyota v8')
-    choice3=  int(input('which car do you prefer'))
-    if choice3==1:
-        print('you have selected a Mercedes Benz GLE')
-    else:
-        print('you have selected a Toyota v8')                
-else:
-    print('invalid choice')        
+# print('select your ride')
+# print('1. bike')
+# print('2. car')
+# choice= int(input('enter your coice'))
+# if choice== 1:
+#     print('what type of bike')
+#     print( '1.quad bike')
+#     print('2. motorcycle')
+#     choice2 = int(input('which bike do you prefer'))
+#     if choice2 == 1:
+#         print('you have selected a quad bike')
+#     else:
+#         print('you have selected a mortorcycle')
+# elif choice==2:
+#     print('what type of car do you want ')
+#     print('1. Mercedes Benz')
+#     print('2. Toyota v8')
+#     choice3=  int(input('which car do you prefer'))
+#     if choice3==1:
+#         print('you have selected a Mercedes Benz GLE')
+#     else:
+#         print('you have selected a Toyota v8')                
+# else:
+#     print('invalid choice')        
+
+
+#Reverse
+name = input('Enter your name ')
+str= ('')
+for i in name:
+    str= i + str
+print('original name ', name)
+print('reversed name ', str)  
+for n in range (45): 
+    print(n)
+for i in range (10,1000,10):
+    print(i)     
