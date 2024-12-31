@@ -94,29 +94,38 @@
     
     
         #Enter number
-num =int(input('Enter any number here: '))
-sum=0
-x = 1
-while x<= num : 
-    sum = sum  + x 
-    x += 1
-print(sum, ' is the sum of all the numbers there   ')  
+# num =int(input('Enter any number here: '))
+# sum=0
+# x = 1
+# while x<= num : 
+#     sum = sum  + x 
+#     x += 1
+# print(sum, ' is the sum of all the numbers there   ')  
 
-g= 0
-num =int(input('enter a whole number of yuor choice: '))
-l= 2
-while l<= (num/2):
-    if (num% l ) ==0:
-        g=1
-        break
-    else:
-        l += 1
-if num == 1:
-    print('1 is not a prime number ')
-elif g == 0 :
-    print(num,'is a prime number' )    
-elif g==1 :
-    print(num ,'is not a prime numbre')
+# g= 0
+# num =int(input('enter a whole number of yuor choice: '))
+# l= 2
+# while l<= (num/2):
+#     if (num% l ) ==0:
+#         g=1
+#         break
+#     else:
+#         l += 1
+# if num == 1:
+#     print('1 is not a prime number ')
+# elif g == 0 :
+#     print(num,'is a prime number' )    
+# elif g==1 :
+#     print(num ,'is not a prime numbre')
                  
-
-          
+#nested loops
+y=input('enter a word of your choice: ')
+x = input('enter character of yuor choice')
+i = 0 
+count = 0 
+while i <len(y):
+    if y[i]==x :
+        count+=1
+    i +=1 
+print('The total number of times ', x , 'has ocured is ', count )
+    
