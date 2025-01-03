@@ -119,13 +119,31 @@
 #     print(num ,'is not a prime numbre')
                  
 #nested loops
-y=input('enter a word of your choice: ')
-x = input('enter character of yuor choice')
-i = 0 
-count = 0 
-while i <len(y):
-    if y[i]==x :
-        count+=1
-    i +=1 
-print('The total number of times ', x , 'has ocured is ', count )
+# y=input('enter a word of your choice: ')
+# x = input('enter character of yuor choice')
+# i = 0 
+# count = 0 
+# while i <len(y):
+#     if y[i]==x :
+#         count+=1
+#     i +=1 
+# print('The total number of times ', x , 'has ocured is ', count )
+    
+#patterns
+print('Enter number of rows for the half pyrmid pattern (*):  ') 
+n=int(input('how many rows should it have:  '))  
+
+for i in range(n):
+        
+        for h in range(i +1 ):
+                print('*', end='' )
+        print()        
+                
+p = int(input('Enter number of rows for the pattern : '))
+d=1 
+for i in range(1, p+1 ):
+        for v in range(1, i+1):
+                print(d, end='')
+                d+=1
+              
     
