@@ -130,20 +130,45 @@
 # print('The total number of times ', x , 'has ocured is ', count )
     
 #patterns
-print('Enter number of rows for the half pyrmid pattern (*):  ') 
-n=int(input('how many rows should it have:  '))  
+# print('Enter number of rows for the half pyrmid pattern (*):  ') 
+# n=int(input('how many rows should it have:  '))  
 
-for i in range(n):
+# for i in range(n):
         
-        for h in range(i +1 ):
-                print('*', end='' )
-        print()        
+#         for h in range(i +1 ):
+#                 print('*', end='' )
+#         print()        
                 
-p = int(input('Enter number of rows for the pattern : '))
-d=1 
-for i in range(1, p+1 ):
-        for v in range(1, i+1):
-                print(d, end='')
-                d+=1
+# p = int(input('Enter number of rows for the pattern : '))
+# d=1 
+# for i in range(1, p+1 ):
+#         for v in range(1, i+1):
+#                 print(d, end='')
+#                 d+=1
+
+#turtle
+import turtle
+# f=turtle.Screen()
+# f.bgcolor ('blue')
+# f.title('Turtle')
+# pen=turtle.Turtle()
+# size = 0 
+# while True:
+#         for i in range(4):
+#                 pen.fd(size+1 )
+#                 pen.left(90)
+#                 size-=5
+#         size +=1        
+        
+turtle.Screen().bgcolor('navy blue')
+turtle.Screen().setup(300,400)
+polygon= turtle.Turtle()
+sides=100
+lenght=70
+angle=360.0/sides
+for i in range(sides):
+        polygon.forward(lenght)
+        polygon.right(angle)
+turtle.done()
               
     
