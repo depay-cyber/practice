@@ -160,15 +160,15 @@ import turtle
 #                 size-=5
 #         size +=1        
         
-turtle.Screen().bgcolor('navy blue')
-turtle.Screen().setup(300,400)
-polygon= turtle.Turtle()
-sides=100
-lenght=70
-angle=360.0/sides
-for i in range(sides):
-        polygon.forward(lenght)
-        polygon.right(angle)
-turtle.done()
+# turtle.Screen().bgcolor('navy blue')
+# turtle.Screen().setup(300,400)
+# polygon= turtle.Turtle()
+# sides=100
+# lenght=70
+# angle=360.0/sides
+# for i in range(sides):
+#         polygon.forward(lenght)
+#         polygon.right(angle)
+# turtle.done()
               
     
