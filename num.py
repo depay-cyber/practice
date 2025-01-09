@@ -171,4 +171,25 @@ import turtle
 #         polygon.right(angle)
 # turtle.done()
               
-    
+# def cube(num1):
+#         return num1**3
+# def by3(num1):
+#         if num1 % 3 ==0 :
+#                 return cube(num1)
+#         else:
+#                 return False
+# print        
+
+a= input('Enter a word please').upper()
+if 'B' in a:
+        print('the word has letter b')
+else:
+        print ('word doesnot have letter b')         
+
+V=10
+while V > 0 :
+        V-=1
+        if V ==7:
+                continue
+        print(V)
+                 
