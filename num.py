@@ -180,16 +180,30 @@ import turtle
 #                 return False
 # print        
 
-a= input('Enter a word please').upper()
-if 'B' in a:
-        print('the word has letter b')
-else:
-        print ('word doesnot have letter b')         
+# a= input('Enter a word please').upper()
+# if 'B' in a:
+#         print('the word has letter b')
+# else:
+#         print ('word doesnot have letter b')         
 
-V=10
-while V > 0 :
-        V-=1
-        if V ==7:
-                continue
-        print(V)
+# V=10
+# while V > 0 :
+#         V-=1
+#         if V ==7:
+#                 continue
+#         print(V)
                  
+try:
+        num1,num2=eval(input('Enter number two number separated by comas: '))
+        result= num1/ num2
+        print('The result is ', result )
+except ZeroDivisionError:
+        print('Cant divide by 0')
+except SyntaxError:
+        print('Coma is missing , try separating with a comma')
+except:
+        print('wrong input')                
+else:
+     print('No exception')
+finally:
+        print('Great work')        
