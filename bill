@@ -1,0 +1,10 @@
+print('hello world')
+
+def Total(unit, quantity):
+    return (unit*quantity)
+print('Lets check out the bill')
+quantity= int(input('Quantity= '))
+unit=int(input('Unit cost= ' ))
+print('Your bill is $', Total(unit, quantity) )
+    
+
