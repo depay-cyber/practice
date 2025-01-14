@@ -193,17 +193,117 @@ import turtle
 #                 continue
 #         print(V)
                  
-try:
-        num1,num2=eval(input('Enter number two number separated by comas: '))
-        result= num1/ num2
-        print('The result is ', result )
-except ZeroDivisionError:
-        print('Cant divide by 0')
-except SyntaxError:
-        print('Coma is missing , try separating with a comma')
-except:
-        print('wrong input')                
-else:
-     print('No exception')
-finally:
-        print('Great work')        
+# try:
+#         num1,num2=eval(input('Enter number two number separated by comas: '))
+#         result= num1/ num2
+#         print('The result is ', result )
+# except ZeroDivisionError:
+#         print('Cant divide by 0')
+# except SyntaxError:
+#         print('Coma is missing , try separating with a comma')
+# except:
+#         print('wrong input')                
+# else:
+#      print('No exception')
+# finally:
+#         print('Great work')        
+# import random
+# while True:
+#         Useraction=input('Enter choice(rock, paper, scissors: )')
+#         possible_actions={'rock, paper, scissors'}
+#         computer_action= random.choice(possible_actions)
+#         print(f'\n you chose {Useraction}, computer chose{computer_action}.\n')
+#         if Useraction==computer_action:
+#                 print(f'both players selected {Useraction}. it is a tie ')
+#         elif Useraction=='rock':
+#                 if computer_action== 'scissors' :
+#                         print('YOU win')  
+#         elif Useraction=='paper':
+#                 if computer_action   == 'rock':
+#                         print('You win')
+#         elif Useraction == 'scissors' :
+#                 if computer_action == 'paper':
+#                         print('You win')
+#         else:
+#                 print('Computer wins')
+#         play_again= input('play again ? (yes or no)')
+#         if play_again != 'yes':
+#                 break                                                          
+# import random
+
+# while True:
+#         user_action = input("Enter choice (rock, paper, scissors): ").lower()
+
+
+#         # Define possible action
+
+#         possible_actions = ['rock', 'paper', 'scissors']
+
+
+#         # Ensure the computer selects a valid choice
+
+#         computer_action = random.choice(possible_actions)
+
+#         print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+
+
+# # Compare user and computer actions
+
+#         if user_action == computer_action:
+
+#                 print(f"Both players selected {user_action}. It's a tie!")
+
+#         elif user_action == "rock":
+
+#                 if computer_action == "scissors":
+
+#                         print("You win! Rock smashes scissors.")
+
+#                 else:
+
+#                         print("Computer wins! Paper covers rock.")
+
+#         elif user_action == "paper":
+
+#                 if computer_action == "rock":
+
+#                         print("You win! Paper covers rock.")
+
+#                 else:
+
+#                         print("Computer wins! Scissors cut paper.")
+
+#         elif user_action == "scissors":
+
+#                 if computer_action == "paper":
+
+#                         print("You win! Scissors cut paper.")
+
+#                 else:
+
+#                         print("Computer wins! Rock smashes scissors.")
+
+#         else:
+
+#                 print("Invalid input. Please enter rock, paper, or scissors.")
+
+
+# # Ask to play again
+
+#         play_again = input("Play again? (yes or no): ").lower()
+
+#         if play_again != "yes":
+
+#                 print("Thanks for playing!")
+
+#                 break
+
+
+
+#date time
+from datetime import date, time,datetime
+today =date.today()
+tim= time()
+now=datetime.now()
+print('todays date is ',today )
+print(tim)
