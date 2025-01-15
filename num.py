@@ -301,9 +301,28 @@ import turtle
 
 
 #date time
-from datetime import date, time,datetime
-today =date.today()
-tim= time()
-now=datetime.now()
-print('todays date is ',today )
-print(tim)
+# from datetime import date, time,datetime
+# today =date.today()
+# tim= time()
+# now=datetime.now()
+# print('todays date is ',today )
+# print(tim)
+
+#lists
+days=['monday','tuesday', 'wednesday','thursday', 'friday']
+print(len(days))
+days.append('saturday')
+print(days)
+# days.sort()
+# print(days)
+days.pop()
+print(days)
+print(days[-1])
+days.insert(2,'sunday')
+print(days)
+days.reverse()
+print(days)
+days.remove('monday')
+print(days)
+days.clear()
+print(days)
