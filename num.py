@@ -350,4 +350,15 @@ for i in range(0,9):
 if (sunny > rainy):
         print('good weather')
 else:
-        print('weather is bad')                                
+        print('weather is bad')    
+students={'name':'ambrose','age':10,
+          'name2': 'mercy', 'age': 14,
+          'name3': 'ambrose', 'age':18,
+          'name4':'brain','age':13,
+          'name5':'ambrose','age':15}
+student='ambrose'
+result=0
+for key in students:
+        if students[key]==student:
+                result+=1
+print('Ambrose appears ', + result ,  )                                                    
