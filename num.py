@@ -308,21 +308,46 @@ import turtle
 # print('todays date is ',today )
 # print(tim)
 
-#lists
-days=['monday','tuesday', 'wednesday','thursday', 'friday']
-print(len(days))
-days.append('saturday')
-print(days)
-# days.sort()
+# #lists
+# days=['monday','tuesday', 'wednesday','thursday', 'friday']
+# print(len(days))
+# days.append('saturday')
 # print(days)
-days.pop()
-print(days)
-print(days[-1])
-days.insert(2,'sunday')
-print(days)
-days.reverse()
-print(days)
-days.remove('monday')
-print(days)
-days.clear()
-print(days)
+# # days.sort()
+# # print(days)
+# days.pop()
+# print(days)
+# print(days[-1])
+# days.insert(2,'sunday')
+# print(days)
+# days.reverse()
+# print(days)
+# days.remove('monday')
+# print(days)
+# days.clear()
+# print(days)
+
+def palendrum(r):
+        n=len(r)-1
+        s=0
+        while(s < n):
+                if (r[s] != r[n]):
+                        return False
+                s +=1 
+                n-=1
+        return True
+r= (1,2,3,3,2,)
+print(palendrum(r))
+
+weather= (1,0,0,0,1,1,0,1,1)
+sunny=0
+rainy=0
+for i in range(0,9):
+        if (weather[i]==0):
+                rainy +=1
+        else:
+                sunny +=1 
+if (sunny > rainy):
+        print('good weather')
+else:
+        print('weather is bad')                                
