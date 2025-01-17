@@ -327,38 +327,52 @@ import turtle
 # days.clear()
 # print(days)
 
-def palendrum(r):
-        n=len(r)-1
-        s=0
-        while(s < n):
-                if (r[s] != r[n]):
-                        return False
-                s +=1 
-                n-=1
-        return True
-r= (1,2,3,3,2,)
-print(palendrum(r))
+# def palendrum(r):
+#         n=len(r)-1
+#         s=0
+#         while(s < n):
+#                 if (r[s] != r[n]):
+#                         return False
+#                 s +=1 
+#                 n-=1
+#         return True
+# r= (1,2,3,3,2,)
+# print(palendrum(r))
 
-weather= (1,0,0,0,1,1,0,1,1)
-sunny=0
-rainy=0
-for i in range(0,9):
-        if (weather[i]==0):
-                rainy +=1
-        else:
-                sunny +=1 
-if (sunny > rainy):
-        print('good weather')
-else:
-        print('weather is bad')    
-students={'name':'ambrose','age':10,
-          'name2': 'mercy', 'age': 14,
-          'name3': 'ambrose', 'age':18,
-          'name4':'brain','age':13,
-          'name5':'ambrose','age':15}
-student='ambrose'
-result=0
-for key in students:
-        if students[key]==student:
-                result+=1
-print('Ambrose appears ', + result ,  )                                                    
+# weather= (1,0,0,0,1,1,0,1,1)
+# sunny=0
+# rainy=0
+# for i in range(0,9):
+#         if (weather[i]==0):
+#                 rainy +=1
+#         else:
+#                 sunny +=1 
+# if (sunny > rainy):
+#         print('good weather')
+# else:
+#         print('weather is bad')    
+# students={'name':'ambrose','age':10,
+#           'name2': 'mercy', 'age': 14,
+#           'name3': 'ambrose', 'age':18,
+#           'name4':'brain','age':13,
+#           'name5':'ambrose','age':15}
+# student='ambrose'
+# result=0
+# for key in students:
+#         if students[key]==student:
+#                 result+=1
+# print('Ambrose appears ', + result ,  )                                                    
+
+
+#sets
+import array as arr
+a = arr.array('i', [1,2,3,6,7,8,934])
+print('\n the new craeted array is ' ,end= "")
+for i in range(0,7):
+        print(a[i],end=" ")
+print()
+j = arr.array('d',[1,2,3,6,7,8,934]) 
+print('\n the new created array is', end=" ")
+for i in range(0,7):
+        print(j[i], end=" ")
+print('\n the element in position 2 is ', a[2], )               
