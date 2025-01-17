@@ -365,14 +365,28 @@ import turtle
 
 
 #sets
-import array as arr
-a = arr.array('i', [1,2,3,6,7,8,934])
-print('\n the new craeted array is ' ,end= "")
-for i in range(0,7):
-        print(a[i],end=" ")
-print()
-j = arr.array('d',[1,2,3,6,7,8,934]) 
-print('\n the new created array is', end=" ")
-for i in range(0,7):
-        print(j[i], end=" ")
-print('\n the element in position 2 is ', a[2], )               
+# import array as arr
+# a = arr.array('i', [1,2,3,6,7,8,934])
+# print('\n the new craeted array is ' ,end= "")
+# for i in range(0,7):
+#         print(a[i],end=" ")
+# print()
+# j = arr.array('d',[1,2,3,6,7,8,934]) 
+# print('\n the new created array is', end=" ")
+# for i in range(0,7):
+#         print(j[i], end=" ")
+# print('\n the element in position 2 is ', a[2], )               
+
+#functions
+name=[1,2,3,4,5,6,7]
+h=[6,6,7,8,99,80,5766]
+result=map(lambda x,y:x+y,name,h)
+print('addition of two lists')
+print(list(result))
+
+r=[1,3,5,7,9,11]
+def square(numbers):
+        return numbers**2
+v= list(map(square,r))
+print('the square of the number is')
+print(v)
