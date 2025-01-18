@@ -378,15 +378,35 @@ import turtle
 # print('\n the element in position 2 is ', a[2], )               
 
 #functions
-name=[1,2,3,4,5,6,7]
-h=[6,6,7,8,99,80,5766]
-result=map(lambda x,y:x+y,name,h)
-print('addition of two lists')
-print(list(result))
+# name=[1,2,3,4,5,6,7]
+# h=[6,6,7,8,99,80,5766]
+# result=map(lambda x,y:x+y,name,h)
+# print('addition of two lists')
+# print(list(result))
 
-r=[1,3,5,7,9,11]
-def square(numbers):
-        return numbers**2
-v= list(map(square,r))
-print('the square of the number is')
-print(v)
+# r=[1,3,5,7,9,11]
+# def square(numbers):
+#         return numbers**2
+# v= list(map(square,r))
+# print('the square of the number is')
+# print(v)
+
+
+class Shoes:
+        shoes='sneakers'
+        def __init__(self,brand ,colour):
+                self.brand=brand
+                self.colour= colour
+           
+shoe= Shoes('adiddas', 'black')
+print('my best shoe is', shoe.brand , shoe.colour , shoe.shoes)                
+
+class Phones:
+        ram='164 gb'
+        def __init__(self, Company, type):
+                self.Company=Company
+                self.type=type
+                
+gadget= Phones('Samsung','S 24') 
+gadget2=Phones('iPhone','16')
+print('is ', gadget.Company , gadget.type , gadget.ram, 'better than ', gadget2.Company , gadget2.type)            
