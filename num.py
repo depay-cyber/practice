@@ -436,7 +436,7 @@ class Dad:
                 self.height= height
                 self.eye_color= eye_color
         def show(self):
-                print('your height is ',self.height , 'your eye color is', self.eye_color)
+                return('your height is ',self.height , 'your eye color is', self.eye_color)
                 
 class Son(Dad):
         def __init__(self, name ,age, height, eye_color):
@@ -447,4 +447,17 @@ class Son(Dad):
                 print("Your name is " + str(self.name) + ", Your age is " + str(self.age) + ", " + str(son.show()))
                 # print('Your name is ', + str(self.name), 'Your age is ', +   str(self.age), + str(son.show()) )
 son=Son('Ambrose', '13','7ft', 'blue' )
-son.sons()                                       
+son.sons()        
+class Computer:
+        def __init__(self):
+                self.__maximum_price= 40000   
+        def sell(self):
+                print('the selling price of the laptop is ', self.__maximum_price) 
+                
+        def maximum_price(self,price):
+                self.__maximum_price= price
+obj= Computer ()
+obj.sell()        
+obj.maximum_price(50000)     
+obj.sell()
+                                                           
