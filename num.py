@@ -392,21 +392,43 @@ import turtle
 # print(v)
 
 
-class Shoes:
-        shoes='sneakers'
-        def __init__(self,brand ,colour):
-                self.brand=brand
-                self.colour= colour
+# class Shoes:
+#         shoes='sneakers'
+#         def __init__(self,brand ,colour):
+#                 self.brand=brand
+#                 self.colour= colour
            
-shoe= Shoes('adiddas', 'black')
-print('my best shoe is', shoe.brand , shoe.colour , shoe.shoes)                
+# shoe= Shoes('adiddas', 'black')
+# print('my best shoe is', shoe.brand , shoe.colour , shoe.shoes)                
 
-class Phones:
-        ram='164 gb'
-        def __init__(self, Company, type):
-                self.Company=Company
-                self.type=type
+# class Phones:
+#         ram='164 gb'
+#         def __init__(self, Company, type):
+#                 self.Company=Company
+#                 self.type=type
                 
-gadget= Phones('Samsung','S 24') 
-gadget2=Phones('iPhone','16')
-print('is ', gadget.Company , gadget.type , gadget.ram, 'better than ', gadget2.Company , gadget2.type)            
+# gadget= Phones('Samsung','S 24') 
+# gadget2=Phones('iPhone','16')
+# print('is ', gadget.Company , gadget.type , gadget.ram, 'better than ', gadget2.Company , gadget2.type)            
+
+
+class Car:
+        def __init__(self,color,brand):
+                self.color=color
+                self.brand=brand
+        def show(self):
+                print('My best car is', self.color , self.brand)  
+        def gadget(self):
+                print('i like the ', self.brand, self.color,'in color')         
+BMW= Car('black', 'BMW')
+toyota=Car('silver', 'Toyota V8')
+BMW.show()
+toyota.show()
+
+apple=Car('Macbook', 'black')
+dell=Car('Dell', 'brown')
+apple.gadget()
+dell.gadget()
+             
+                             
+                
