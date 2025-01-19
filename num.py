@@ -431,33 +431,54 @@ import turtle
 # dell.gadget()
              
                              
-class Dad:
-        def __init__(self,height, eye_color):
-                self.height= height
-                self.eye_color= eye_color
-        def show(self):
-                return('your height is ',self.height , 'your eye color is', self.eye_color)
+# class Dad:
+#         def __init__(self,height, eye_color):
+#                 self.height= height
+#                 self.eye_color= eye_color
+#         def show(self):
+#                 return('your height is ',self.height , 'your eye color is', self.eye_color)
                 
-class Son(Dad):
-        def __init__(self, name ,age, height, eye_color):
-                self.name=name
-                self.age=age
-                super().__init__(height, eye_color) 
-        def sons(self):
-                print("Your name is " + str(self.name) + ", Your age is " + str(self.age) + ", " + str(son.show()))
-                # print('Your name is ', + str(self.name), 'Your age is ', +   str(self.age), + str(son.show()) )
-son=Son('Ambrose', '13','7ft', 'blue' )
-son.sons()        
-class Computer:
-        def __init__(self):
-                self.__maximum_price= 40000   
-        def sell(self):
-                print('the selling price of the laptop is ', self.__maximum_price) 
+# class Son(Dad):
+#         def __init__(self, name ,age, height, eye_color):
+#                 self.name=name
+#                 self.age=age
+#                 super().__init__(height, eye_color) 
+#         def sons(self):
+#                 print("Your name is " + str(self.name) + ", Your age is " + str(self.age) + ", " + str(son.show()))
+#                 # print('Your name is ', + str(self.name), 'Your age is ', +   str(self.age), + str(son.show()) )
+# son=Son('Ambrose', '13','7ft', 'blue' )
+# son.sons()        
+# class Computer:
+#         def __init__(self):
+#                 self.__maximum_price= 40000   
+#         def sell(self):
+#                 print('the selling price of the laptop is ', self.__maximum_price) 
                 
-        def maximum_price(self,price):
-                self.__maximum_price= price
-obj= Computer ()
-obj.sell()        
-obj.maximum_price(50000)     
-obj.sell()
+#         def maximum_price(self,price):
+#                 self.__maximum_price= price
+# obj= Computer ()
+# obj.sell()        
+# obj.maximum_price(50000)     
+# obj.sell()
+
+class square:
+        def __init__(self, side):
+                self.side=side
+        def area(self):
+                print('the area  of the square is ', self.side**2) 
+class circle:
+        def __init__(self, radius):
+                self.radius=radius
+        def area(self)  :
+                print('The area of the circle is', 3.14*self.radius**2)
+circ= circle(6)
+sq=square(6)   
+circ.area()   
+sq.area ()         
+                
+                
+                      
+                                
+                      
+                
                                                            
