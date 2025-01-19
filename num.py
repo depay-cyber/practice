@@ -412,23 +412,39 @@ import turtle
 # print('is ', gadget.Company , gadget.type , gadget.ram, 'better than ', gadget2.Company , gadget2.type)            
 
 
-class Car:
-        def __init__(self,color,brand):
-                self.color=color
-                self.brand=brand
-        def show(self):
-                print('My best car is', self.color , self.brand)  
-        def gadget(self):
-                print('i like the ', self.brand, self.color,'in color')         
-BMW= Car('black', 'BMW')
-toyota=Car('silver', 'Toyota V8')
-BMW.show()
-toyota.show()
+# class Car:
+#         def __init__(self,color,brand):
+#                 self.color=color
+#                 self.brand=brand
+#         def show(self):
+#                 print('My best car is', self.color , self.brand)  
+#         def gadget(self):
+#                 print('i like the ', self.brand, self.color,'in color')         
+# BMW= Car('black', 'BMW')
+# toyota=Car('silver', 'Toyota V8')
+# BMW.show()
+# toyota.show()
 
-apple=Car('Macbook', 'black')
-dell=Car('Dell', 'brown')
-apple.gadget()
-dell.gadget()
+# apple=Car('Macbook', 'black')
+# dell=Car('Dell', 'brown')
+# apple.gadget()
+# dell.gadget()
              
                              
+class Dad:
+        def __init__(self,height, eye_color):
+                self.height= height
+                self.eye_color= eye_color
+        def show(self):
+                print('your height is ',self.height , 'your eye color is', self.eye_color)
                 
+class Son(Dad):
+        def __init__(self, name ,age, height, eye_color):
+                self.name=name
+                self.age=age
+                super().__init__(height, eye_color) 
+        def sons(self):
+                print("Your name is " + str(self.name) + ", Your age is " + str(self.age) + ", " + str(son.show()))
+                # print('Your name is ', + str(self.name), 'Your age is ', +   str(self.age), + str(son.show()) )
+son=Son('Ambrose', '13','7ft', 'blue' )
+son.sons()                                       
