@@ -461,21 +461,39 @@ import turtle
 # obj.maximum_price(50000)     
 # obj.sell()
 
-class square:
-        def __init__(self, side):
-                self.side=side
-        def area(self):
-                print('the area  of the square is ', self.side**2) 
-class circle:
-        def __init__(self, radius):
-                self.radius=radius
-        def area(self)  :
-                print('The area of the circle is', 3.14*self.radius**2)
-circ= circle(6)
-sq=square(6)   
-circ.area()   
-sq.area ()         
-                
+# class square:
+#         def __init__(self, side):
+#                 self.side=side
+#         def area(self):
+#                 print('the area  of the square is ', self.side**2) 
+# class circle:
+#         def __init__(self, radius):
+#                 self.radius=radius
+#         def area(self)  :
+#                 print('The area of the circle is', 3.14*self.radius**2)
+# circ= circle(6)
+# sq=square(6)   
+# circ.area()   
+# sq.area ()         
+
+class Flashcard:
+        def __init__(self,word,meaning):
+                self.meaning=meaning
+                self.word=word
+        def __str__(self):
+                return self.word + '(' + self.meaning +')'
+Flash= []
+print('Welcome to flash card application ')
+while True:
+        word =input('Enter the word the word you want to add to flash card: ')
+        mean=input('Enter the meaning of the word;')
+        Flash.append(Flashcard(word,mean))
+        option=int(input('Enter 0,if you want to add to the Flashcard otherwise enter 1'))
+        if (option):
+                break                
+print('\n Your flash cards')
+for i in Flash:
+        print ('>', i)                
                 
                       
                                 
